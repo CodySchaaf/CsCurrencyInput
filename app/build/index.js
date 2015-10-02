@@ -96,10 +96,8 @@ var cs;
         Link.prototype.attachValidation = function (ngModelController) {
             var _this = this;
             ngModelController.$validators['pattern'] = function (modelValue, viewValue) {
-                console.log("modelValue", modelValue);
-                console.log("viewValue", viewValue);
                 var value = modelValue == null ? viewValue : String(modelValue);
-                return value == null || _this.pattern().test(value);
+                return ngModelController.$isEmpty(viewValue) || _this.pattern().test(value);
             };
         };
         Link.defaultPlaceholder = "$";

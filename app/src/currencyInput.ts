@@ -103,10 +103,8 @@ module cs {
 
     private attachValidation(ngModelController: ng.INgModelController): void {
       ngModelController.$validators['pattern'] = (modelValue: number, viewValue: string): boolean => {
-        console.log("modelValue", modelValue);
-        console.log("viewValue", viewValue);
         var value = modelValue == null ? viewValue : String(modelValue);
-        return value == null || this.pattern().test(value)
+        return ngModelController.$isEmpty(viewValue) || this.pattern().test(value)
       };
     }
   }
