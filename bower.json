@@ -1,0 +1,27 @@
+{
+  "name": "cs-angular-currency-input",
+  "version": "1.0.0",
+  "homepage": "https://github.com/CodySchaaf/CsCurrencyInput",
+  "authors": [
+    "CodySchaaf <codyjschaaf@sigfig.com>"
+  ],
+  "description": "An Angular module with currency input directive (add commas as you type!)",
+  "main": "app/build/index.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "directive",
+    "currency",
+    "input"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
