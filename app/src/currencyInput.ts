@@ -93,9 +93,7 @@ module cs {
       });
 
       ngModelController.$formatters.unshift((inputValue: string): string => {
-        if (!inputValue) return null;
         var stringValue = String(inputValue);
-        if (!this.pattern().test(stringValue)) return null;
         var formattedString: string = Str.addCommasToString(Str.getIntegerPart(stringValue));
         return Link.reassembleInput(stringValue, formattedString);
       });
