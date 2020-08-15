@@ -16,5 +16,5 @@ Check out a working example on [Codepen](http://codepen.io/codyschaaf/pen/GprYyR
 The directive's name is `cs-currency-input`, pass in the optional `allow-negatives="true"` to allow negative currencies.
 Change the placeholder to by passing in `cs-placeholder="*"`, or remove it with `no-placeholder="true"`.
 
-To see a step-by-step tutorial of the creation of this directive check out my [blog](http://blog.codyschaaf.com/angular/2015/10/07/angular-currency-input-directive.html)
+To see a step-by-step tutorial of the creation of this directive check out my [blog](https://blog.codyschaaf.com/blog/2015-10-07-angular-currency-input-directive/)
 
